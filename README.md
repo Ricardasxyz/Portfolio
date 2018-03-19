@@ -1,3 +1,3 @@
 # Portfolio
 
-Sveiki,  [kazkoks zodis](img/img.jpg)
+Sveiki,  [kazkoks zodis](img/img.jpeg)
