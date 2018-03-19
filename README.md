@@ -1,3 +1,3 @@
 # Portfolio
 
-Sveiki, [!demo](img/img.jpeg)
+Sveiki, ![demo](img/img.jpeg)
