@@ -4,7 +4,7 @@
 
 [LightBox Gallery](/Travel%20Light%20Script/lightbox.html)
 
-[Sample Page](/Uzduotis/Sample-site.html)
+[Sample Page](/Uzduotis/sample-site.html)
 
 [Cat_Landing Page](/cat_page/catlanding.html)
 
