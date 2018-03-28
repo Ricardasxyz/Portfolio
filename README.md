@@ -1,3 +1,3 @@
 # Portfolio
 
-[READ CODE](/img.html)
+[READ CODE](/img/index.html)
