@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome To Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Cormorant:400,500,700|Montserrat:700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/icomoon.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<section class="landing flex">
+
+		<div class="bgImg"></div>
+		<div class="shade"></div>
+		<h1 class="none">Looking for a dev?</h1>
+		<h2 class="slide none">Look no more</h2>
+		<div class="arrowPos">
+			<a href="#here" id="scrollDown" ><img src="Images/white-arrow-down.png" alt="arrow"></a>
+		</div>
+	</section>
+	<section class="intro container" id="here">
+		<div class="hamburger flex">
+			<div id="menuToggle">
+				 <div class="bar1"></div>
+	  			 <div class="bar2"></div>
+	  			 <div class="bar3"></div>
+  			 </div>
+		</div>
+		<div class="menu flex">
+			<div class="brand_name">PORTFOLIO</div>
+			<nav>
+				<ul>
+					<a href="#"><li>HOME</li></a>
+					<a href="#aboutSection "><li>ABOUT</li></a>
+					<a href="#serviceSection"><li>SERVICE</li></a>
+					<a href="#portfolioSection"><li>PORTFOLIO</li></a>
+					<a href="#contactSection"><li>CONTACT</li></a>
+				</ul>
+			</nav>
+		</div>
+		<div class="me flex">
+			<div class="personal_info">
+				<h2>Richie Stan</h2>
+				<p>Full Stack Developer</p>
+				<a href="#hire">HIRE ME</a>
+				<a href="Motyvacinis.docx" download="Motyvacinis">MOTYVACINIS</a>
+			</div>
+			<div>
+				<img src="Images/Selfie.jpg" class="Images" alt="pictureOfMe">
+			</div>
+		</div>
+	</section>
+	<section id="aboutSection" class="about container">
+		<h2 class="vertical">ABOUT</h2>
+		<p>I’ve got one huge issue – I love problems. I love problems related to my hobbies, problems related to health and problems related to life in general, but above all – I like solving them. Programming to me is an emotional rollercoaster. I hate it, but I also love it. It’s my drug. When I’m not coding, I usually play the guitar, write or read some books.</p>
+		<a href="Resume.pdf" download="Resume">DOWNLOAD MY CV</a>
+	</section>
+	<section class="filler"></section>
+	<section class="skills container">
+		<h2 id="serviceSection">WHAT I DO:</h2>
+		<div class="list_of_skills flex">
+			<div class="flex">
+				<img src="Images/front-end.png" alt="monitor">
+				<h3>Front-End</h3>
+				<p>I know CSS3, Bootstrap and jQuery, which I use to build websites and apps.</p>		
+			</div>
+			<div class="flex">
+				<img src="Images/Back-End.png" alt="computer">
+				<h3>Back-End</h3>
+				<p>Mainly PHP and SQL. I can add a form, play with the database and I’ve got the basics down, too. Currently I’m learning Wordpress and participating in Coding School lessons.</p>
+			</div>
+			<div class="flex">
+				<img src="Images/fun-go-08-512.png" alt="binary">
+				<h3>Random Fact:</h3>
+				<p>I drink quite a lot of coffee.</p>
+			</div>	
+		</div>
+	</section>
+	<div class="to_top">
+			<img src="Images/arrowUp.png" class="small_Image" alt="arrow">
+	</div>
+	<section class="projects container flex">
+		<h2 id="portfolioSection">MY RECENT WORKS</h2>
+		<div class="choices flex">
+			<div class="choiceWebsites false">WEBSITES</div>
+			<div class="choiceOthers success">OTHERS</div>
+		</div>
+		<div id="websites" class="flex">
+			<div  class="relative"><img src="Images/medicine.jpg" class="Images" alt="medicinePage">
+				<a href=""><img src="Images/searchhover.png" alt="hover_icon"></a>
+			</div>
+			<div  class="relative"><img src="Images/cat_page.jpg" class="Images" alt="landing">
+				<a href=""><img src="Images/searchhover.png" alt="hover_icon"></a></div>
+			<div  class="relative"><img src="Images/Work_in_progress.png" class="Images" alt="landing">
+				</div>
+			<div  class="relative"><img src="Images/Work_in_progress.png" class="Images" alt="landing">
+				</div>
+		</div>
+		<div id="others" class="flex" style="display:none">
+			<div class="relative"><img src="Images/to_do.jpg" class="Images" alt="medicinePage">
+			<a href="jQueryTodo/htmlfile.html"><img src="Images/searchhover.png" alt="hover_icon"></a></div>
+			<div class="relative"><img src="Images/color_game.jpg" class="Images" alt="landing">
+			<a href="ColorGame/html.html"><img src="Images/searchhover.png" alt="hover_icon"></a></div>
+			<div><img src="Images/Work_in_progress.png" class="Images" alt="landing"></div>
+			<div><img src="Images/Work_in_progress.png" class="Images" alt="landing"></div>
+		</div>
+	</section>
+	<section class="contact">
+		<form class="flex">
+			<h2 id="contactSection">CONTACT</h2>
+			<div class="flex">
+				<input type="text" name="name" placeholder="Your Name">
+				<input type="email" name="name" placeholder="Your E-mail">
+			</div>
+			<textarea placeholder="Your Message" rows="5" cols="45"></textarea>
+			<button type="submit" id="hire">HIRE ME</button>
+		</form>
+	</section>
+	<footer class="flex">
+		<div>
+			<a href="https://www.facebook.com/ricardas.staniulis.3">
+				<span class="icon-facebook2"></span>
+			</a>
+			<a href="https://codepen.io/Ricardaszxy/" target="_blank">
+				<span class="icon-codepen"></span></a>
+			<a href="https://www.linkedin.com/in/ricardas-staniulis/" target="_blank">
+				<span class="icon-linkedin"></span>
+			</a>
+		</div>
+		
+	</footer>
+  <script src="scripts/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="scripts/javascript.js"></script>
+</body>
+</html> 

@@ -1,0 +1,460 @@
+body {
+  font-size: 16px; }
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none; }
+
+  $darkColor: #212121;
+  $darkGreen: #22461c;
+
+  @mixin landingChanges{
+  	 background-repeat: no-repeat;
+	 background-size: cover;
+	 height: 100vh;
+	 width: 100%;
+	 z-index: -1;
+  }
+ .vertical::before{
+  content: "";
+  border: 2px solid black; }
+ 
+.small_Image{
+  width:35px;
+  height:35px;
+}
+.relative{
+  position:relative;
+}
+.block{
+	display:block;
+}
+.none{
+	display:none;
+}
+.arrowPos{
+  position:relative;
+  top:35%;
+}
+.false{
+  padding: 2px 6px 2px 6px;
+  background-color: $darkColor;
+  color: white;
+  border: 1px solid black;
+}
+.success{
+  padding: 2px 6px 2px 6px;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+.none{
+	display:none;
+}
+.Images {
+  width: 250px;
+  height: 250px; }
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto; }
+.bgImg{
+  position:absolute;
+  background: url(../Images/black-and-white-man-person-hands.jpg);
+  background-position:top;
+  @include landingChanges;
+}
+.shade{
+  position:absolute;
+  background: url(../Images/black.jpg);
+  @include landingChanges;
+  opacity:0.3;
+}
+.landing {
+  height: 100vh;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: white;
+  text-shadow: 2px 2px 4px #000000; }
+
+
+.landing{
+	h1{
+		font-size: 3rem;
+	}
+	div{
+		a{
+			img{
+				padding:5%;
+				width:50px;
+				height:50px;
+ 				cursor:pointer;
+			}
+		}
+	}
+}
+
+
+
+
+.intro {
+  background: url(../Images/bgImg.png);
+  background-size: 100% 100%;
+  background-attachment: fixed; }
+
+.menu {
+  padding: 3%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.menu .brand_name {
+  font-family: 'Montserrat', sans-serif; }
+
+
+.menu nav ul{
+	font-family: 'Cormorant', serif;
+	font-weight: 400;
+	li{
+		display: inline-block;
+		color: #212121;
+		padding: 0 0.6rem 0 0.6rem;
+		transition: all 1s ease;
+	}
+	li:hover{
+	background-color:grey;
+	border-radius:5px;
+	color: white;
+	box-shadow: inset 0 0 0 1px black;
+		
+	}
+}
+
+
+
+.me {
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
+
+.me > * {
+  margin: 2rem; }
+
+.me img {
+  border-radius: 360px; }
+
+
+  .personal_info{
+	  	 h2 {
+	  font-family: 'Cormorant', serif;
+	  font-weight: 700; }
+		  	p {
+	  font-family: 'Cormorant', serif;
+	  font-size: 1.375rem;
+	  margin-bottom: 5px; }
+	  		a {
+	  font-family: 'Cormorant', serif;
+	  font-weight: 500;
+	  color: black;
+	  padding: 0.2rem;
+	  background-color: black;
+	  color: white;
+	  font-size: 1rem;
+	  letter-spacing: 1px;
+	  	 }
+	  	 a:last-child {
+	  background-color: white;
+	  color: black;
+	  border: 1px solid black; }
+   }
+  
+.about {
+	text-align: center;
+  margin-top: 4%; 
+   * {
+  width: 50%;
+  padding: 0.6rem;
+  margin: 0 auto; }
+  a {
+  padding: 2px 6px 2px 6px;
+  background-color: $darkColor;
+  color: white;
+  font-family: 'Cormorant', serif; }
+   p {
+  font-family: 'Cormorant', serif;
+  font-weight: 400;
+  margin-bottom:15px; }
+   h2 {
+  font-family: 'Cormorant', serif;
+  font-weight: 700; }
+}
+
+.filler {
+  background: url(../Images/test2.jpg);
+  height: 250px;
+  margin-top: 5%;
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.skills{
+	 margin-top: 2%;
+	 padding:5px;
+	 background-color:rgb(242, 242, 242);
+  -webkit-box-shadow: 10px 5px 5px black;
+  box-shadow: 5px 5px 3px black;
+  h2 {
+  text-align: center;
+  font-family: 'Cormorant', serif; }
+  h2::before {
+  content: "";
+  border: 2px solid black; }
+}
+
+
+.list_of_skills {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center; }
+
+.list_of_skills > * {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 33%;
+  padding: 2%;
+  font-family: 'Cormorant', serif; }
+
+.list_of_skills h3 {
+  margin-bottom: 1%;
+  font-weight: 700; }
+
+.list_of_skills img {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto; }
+
+.projects {
+
+  font-family: 'Cormorant', serif;
+  margin-top: 4%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; 
+  	h2, .choices{
+  		margin: 5px;
+  	}
+  	.choices :hover{
+    cursor:pointer;
+	}
+}
+.to_top{
+	position:fixed;
+	right:5px;
+	top:50%;
+	display:none;
+	border-radius:2px;
+	cursor: pointer;
+}
+
+#websites, #others {
+  padding-top: 3%;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+  #websites > div, #others > div{
+  	padding:2px;
+  }
+    #websites div img, #others div a{
+    transition: .8s ease;
+  }
+
+#websites div a,#others div a{
+  opacity:0;
+  display:inline-block;
+  position:absolute;
+  top:24%;
+  width:99%;
+  img{
+    position:relative;
+    left:22%;
+  }
+}
+
+.contact {
+  color: black;
+  font-family: 'Cormorant', serif;
+  font-weight: 500;
+  background: url(../Images/wood-wallpaper-background-10.jpg);
+  background-size:cover;
+  margin-top: 2%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: Center;
+  -ms-flex-align: Center;
+  align-items: Center; 
+	  * {
+	  margin: 3px; }
+	  h2 {
+	  color:white;
+	  text-align: center;
+	  text-decoration: underline; }
+	  div{
+		  	input {
+		  text-align:center;
+		  height:40px;
+		  width:125px;
+		  border: 0px solid transparent;
+		  border-bottom: 1px solid black;
+		  color: black;
+		  box-shadow:  5px 10px 18px black;
+		  border-radius: 5px;
+		  outline: none; }
+	  }
+	  textarea{
+	  margin: 0.3rem;
+	  max-width: 90%;
+	  padding-top:4px;
+	  padding-left:20px;
+	  font-size:15px;
+	  border: 0px solid transparent;
+	  border-bottom: 1px solid black;
+	  color: black;
+	  outline: none;
+	  border-radius: 5px;
+	  box-shadow:  5px 10px 18px black;
+		}
+		a {
+	  padding: 4px 20px 4px 20px;
+	  background-color: white;
+	  color: black;
+	  border: 2px solid black;
+	  margin-bottom:8px; }
+}
+
+
+
+footer {
+  font-family: 'Cormorant', serif;
+  background-color: $darkColor;
+  color: white;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  align-items: center;
+  height:60px;
+  		span {
+  			font-size:25px;
+  			transition: all 0.5s ease;
+  		}
+  		div span:hover{
+  			font-size:30px;
+  			
+  		}
+   }
+
+footer div a {
+  color: white;
+  margin: 2px;
+  font-size: 20px; }
+
+
+  .bar1, .bar2, .bar3 {
+      width: 35px;
+      height: 5px;
+      background-color: #D9BB87;
+      margin: 2px 0; 
+}
+    .hamburger{
+      display:none;
+      margin-top:1%;
+      justify-content: center;
+      flex-direction: column;
+      align-items:center;
+      
+    }
+    .hamburger div{
+      padding-bottom:-5px;
+    }
+   
+
+@media all and (max-width: 650px) {
+  .container .hamburger{
+      display:block;      
+      }
+      .container .hamburger div{
+       margin: 5px auto 0 auto;
+       cursor:pointer;  
+      }
+  .menu {
+    display:none;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    text-align: center; }
+  .brand_name {
+    display: none; }
+  .me {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .me .personal_info a {
+    display: none; }
+  .about p {
+    margin-bottom: 2px; }
+  .list_of_skills {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .list_of_skills > * {
+    width: 100%; }
+  .about p {
+    width: 100%; } }
+@media all and (min-width: 650px) {
+	.container .hamburger{
+      display:none;      
+      }
+
+
+}
