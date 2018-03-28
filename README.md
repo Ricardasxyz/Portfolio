@@ -2,4 +2,4 @@
 
 [COLOR GAME](/ColorGame/html.html)
 
-[LightBox Gallery](/Travel_Light_Script/lightbox.html)
+[LightBox Gallery](/Travel%20Light%20Script/lightbox.html)
