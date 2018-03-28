@@ -10,7 +10,7 @@
 
 [Cat_Landing Page](/cat_page/catlanding.html)
 
-[Portfolio Page](/portfolio%20puslapis/index.html/index.html)
+[Portfolio Page](/portfolio%20puslapis/index.html)
 
 [jQuery To Do](/to-do%jQuery/index.html)
 
