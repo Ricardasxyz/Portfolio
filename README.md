@@ -12,7 +12,7 @@
 
 [Portfolio Page](/portfolio%20puslapis/index.html)
 
-[jQuery To Do](/to-do%jQuery/index.html)
+[jQuery To Do](/to-do%20jQuery/index.html)
 
 [jQuery To Do(2 variantas)](/to_do/todo.html)
 
