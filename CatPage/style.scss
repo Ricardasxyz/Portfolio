@@ -1,0 +1,405 @@
+// some sass
+$somewhatBlack : #2e2e2e;
+$somewhatGrey: #9f9f9f;
+$whiteish: #f1f1f1;
+@mixin flex-space-between{
+	display:flex;
+	justify-content:space-between;
+}
+*{
+	margin-top:0px;
+}
+.container{
+	max-width:1200px;
+	margin:0 auto;
+	>*{
+		padding: 0 1% 0 1%;
+	}
+}
+body {
+    margin: 0;
+    text-align: center;
+    font-family: 'PT Serif', serif;
+}
+header{
+	@include flex-space-between;
+	padding:0px 1% 0px 1%;
+	height:40px;
+	background: $somewhatBlack;
+	align-items: center;
+	color: $somewhatGrey;
+	.info ul li{
+		display:inline;
+		padding-right:3px;
+		a{
+			text-decoration:none;
+			color:$somewhatGrey;
+		}
+	}
+	.info ul{
+		padding:2px;
+	}
+	.info ul li:not(:last-child) {
+			border-right: 2px solid $somewhatGrey;
+	 }
+	.social ul{
+		li{
+	 	font-size:1.5rem;
+		display:inline;
+		a{
+			i{
+				color:white;
+				}
+			}
+		}
+	}
+}
+header > * {
+	padding-top:10px;
+}
+nav{
+	margin-top:2%;
+}
+nav ul li{
+	display: inline;
+	font-size:1rem;
+	padding:2px;
+}
+nav ul{
+	border-bottom:5px solid $whiteish;
+	li a{
+		color:black;
+		text-decoration: none;
+	}
+}
+nav ul li a:hover{
+	border-bottom:4px solid #0099ff;
+	color:$somewhatGrey;
+	font-style: italic;
+}
+.title{
+	padding-bottom:2%;
+	border-bottom:5px solid $whiteish;
+	@include flex-space-between;
+	align-items:center;
+	h1{
+		font-size:36px;
+	}
+	span{
+		font-size:12px;
+		margin-bottom:20px;
+	}
+	.search_bar{
+		form{
+			input{
+				padding:8px;
+				font-size:15px;
+				border:none;
+				border-radius:3px;
+				background-color:$whiteish;
+				color:$somewhatGrey;
+			}	
+			button{
+				background:#0099ff;
+				border-radius:3px;
+				font-size:15px;
+				padding:4px;
+				border:none;
+				color:white;
+			}
+		}
+	}
+}
+.Image_showcase{
+	@include flex-space-between;
+	align-items:center;
+	background-color: $whiteish;
+	padding:2%;
+	.showcaseIntro{
+		width:50%;
+		display:flex;
+		justify-content:flex-end;
+		flex-direction:column;
+		p{
+			color:#666666;
+		}
+		button{
+			margin: 0 auto;
+			width:150px;
+			background:#0099ff;
+			border-radius:3px;
+			padding:4px;
+			border:none;
+			color:white;
+			background:#0099ff;
+			font-size:15px;
+			padding:4px;
+		}
+	}
+	.slider{
+		width:49%;
+		display:flex;
+		justify-content:flex-start;
+		 img{
+		width:450px;
+		height:340px;
+		border-radius:20px;
+			}
+	}
+}
+.Intro{
+	display:flex;
+	justify-content:Center;
+	align-items:center;
+	img{
+		width:450px;
+		height:400px;
+	}
+	.cats{
+		width:60%;
+		display:flex;
+		align-items:center;
+		.cat1group{
+			padding:5px;
+			display:flex;
+			flex-direction:column;
+			align-items:center;
+			div img{
+				width:85px;
+				height:80px;
+			}
+		}
+		.cat2group{
+			@include flex-space-between;
+			padding:5px;
+			align-items:center;
+			flex-direction:column;
+			div img{
+				width:80px;
+				height:80px;
+			}
+		}
+	}
+}
+.call_to_action{
+	background-color: #e0e0e0;
+	border-left:5px solid #0099ff;
+	padding:1%;
+	display:flex;
+	align-items:center;
+	height:121px;
+	margin: 0 1% 2% 1%;
+	.shouts{
+		display:flex;
+		flex-direction:column;
+		justify-content:Center;
+		width:50%;
+	}
+	button{
+		font-size:15px;
+		height:62px;
+		background-color:Red;
+		color:white;
+		border:none;
+		border-radius:5px;
+		margin:0 auto;
+		height:55px;
+		background-color:#0099ff;
+	}
+}
+.footer-main{
+	background:black;
+	color:white;
+	display:flex;
+	> *{
+		width:25%;
+		padding:2%;
+	}
+	.about-us{
+		}
+		img{
+			padding-bottom: 15px;
+			width:215px;
+			height:90px;
+		}
+	.quick-links{
+		ul{
+			list-style: none;
+			padding:0;
+
+			li{
+				margin:30px;
+				a{
+					color:#0099ff;
+					text-decoration: none;
+				}
+			}
+					}	
+		}
+		.blog_posts{
+			
+			article{
+				margin-bottom:20px;
+				a{
+					color:#0099ff;
+				}
+			}
+		}
+	.contact_us{			
+			form{
+				margin: 0 auto;
+				> *{
+					width:200px;
+					background: #232323;
+					border:none;
+					border-radius:3px;
+					padding:10px;
+					margin:5px;
+					color: $whiteish;
+					}
+				textarea{
+					height:59px;
+						}
+				button{
+					margin-right:75px;
+					width:150px;
+					background:#0099ff;
+					border-radius:3px;
+					font-size:15px;
+					padding:4px;
+					border:none;
+					color:white;
+				}
+			}
+		}
+	}
+	.footer-copyright{
+			background-color:#222222;
+			h5{
+				text-align:left;
+				color:white;
+				padding:10px;
+			}
+		}
+  .hamburger{
+    	background:$somewhatBlack;
+    	position: absolute;
+        left: -9999px;
+    	width:40px;
+    	padding:8px;
+    	margin: 0 auto;
+    	display:flex;
+    	flex-direction:column;
+    	align-items:center;
+    	justify-content:center;
+    	padding-top:5px;
+   		}
+
+    .bar1, .bar2, .bar3 {
+    cursor:pointer;
+    display:inline-block;
+    width: 35px;
+    height: 5px;
+    margin: 2px 0;
+    background-color: white;
+    transition: 0.4s;
+}
+.change .bar1 {
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+.change .bar2 {
+	opacity: 0;
+	}
+.change .bar3 {
+    transform: rotate(45deg) translate(-2px, -8px);
+}
+	@media only screen and (max-width : 1015px) {	
+		.title{
+    		flex-direction:column;
+    	}
+    	.search_bar{
+    		margin-top:25px;
+    	}
+    	.Image_showcase{
+    		flex-direction:column;
+    		.showcaseIntro{
+    			order:2
+    		}
+    		.slider{
+    			width:100%;
+    			justify-content:center;
+    			order:1;
+    		}
+    	} 	
+    	.Intro{
+		flex-direction:column;
+		justify-content:space-around;
+	.cats{
+		width:100%;
+		> *{
+			width:50%;
+			}
+		}
+	}
+	.footer-main{
+		flex-wrap:wrap;
+		> *{
+		width:46%;
+			}
+				}
+    }
+ /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+    	.call_to_action{
+    		flex-direction:column;
+    		height:auto;
+    		padding:10px;
+    		.shouts{
+    			margin-bottom: 2%;
+    		}
+    	}
+    	.footer-main{
+		> *{
+		width:100%;
+		}
+			}
+			.hamburger{
+				position: absolute;
+        		left: -9999px;
+			}
+    }
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (max-width : 480px) {
+    	.Image_showcase .slider{
+    		img{
+    			width:280px;
+    			height:250px;
+    		}
+    	}
+    	header{
+	height:auto;
+		}
+		  .hamburger{
+    	position: static;
+    	}
+    	nav{
+    		opacity:0;
+    		ul{
+    			padding:0;
+    			justify-content:center;
+    			display:flex;
+    			flex-direction:column;
+    			li{
+    				padding:5px;
+    			}
+    		}
+    	}
+    	.Intro{
+    		img{
+    			width:280px;
+    			height:250px;
+    		}
+    	}
+    	
+    }
+
